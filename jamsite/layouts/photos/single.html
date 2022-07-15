@@ -1,7 +1,54 @@
 {{ define "main" }}
 
-<main>
+<main>	
+
+    <!-- use css with path -->
+    <!-- <link rel="stylesheet" href='{{ (resources.Get "css/code.css").Permalink }}'> -->
+    <!-- use css with relative path -->
+    <!-- <link rel="stylesheet" href='{{ (resources.Get "css/code.css").RelPermalink }}'> -->
+    <!-- transform SASS to CSS and minify -->
+    <!-- {{ $codeStyles := resources.Get "scss/code.scss" | resources.ToCSS | resources.Minify }} -->
+    <!-- shortcut syntax for pipes -->
+    {{ $codeStyles := resources.Get "scss/code.scss" | toCSS | minify }}
+    <link rel="stylesheet" href='{{ $codeStyles.RelPermalink }}'>
+
+
+    <hr>
+    DATA Tests
+    
+    <hr>
+
 	<div class="post">
+
+        <!-- TEST
+        <hr>
+        {{ .Site.Title }}
+        <br>
+        {{ .Site.Copyright }}    
+        <br>
+        {{- range .Site.Pages }}
+            {{ .Title }}: {{ .URL }}<br>
+        {{- end }}
+        <hr> -->
+        Function Tests:
+        <hr>
+        Is 22 more than 8? <strong>{{ if gt 22 8 }} YES {{ else }} NO {{ end }}</strong>
+        <!-- same as: -->
+        Is 22 more than 8? <strong>{{ cond (gt 22 8) "YES"  "NO" }}</strong>
+        <hr>
+        {{ range (split "apple,orange,grape" ",") }}
+        {{ humanize . }}<br>
+        {{ end }}
+        <hr>
+        {{ with (.Site.GetPage "/hugo-dog") }}
+            This context is for the page: {{ .Title }} by {{ .Params.Photoauthor }}
+        {{ end }}
+
+        {{ $myvariable := "A variable value" }}
+        <h3>{{ $myvariable}}</h3>
+        {{ $myvariable = "A NEW variable value" }}
+        <h3>{{ $myvariable}}</h3>
+
 		{{ partial "single/post-info.html" . }}
 		{{ partial "single/title.html" . }}
 

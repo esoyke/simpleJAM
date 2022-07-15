@@ -12,6 +12,7 @@ h1 {
 img {
     vertical-align: middle;
     width: 100px;
+    border: 10px solid red;
 }
 
 p {
