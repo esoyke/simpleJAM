@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Eric",
+        "surname": "Soyke",
+        "skills" : [
+            "Coding",
+            "Building",
+            "Maximizing"
+        ]
+    },
+    {
+        "name": "Eli",
+        "surname": "Soyke",
+        "skills" : [
+            "Biology",
+            "Gaming",
+            "Origami"
+        ]
+    },
+    {
+        "name": "Bob",
+        "surname": "Ross",
+        "skills" : [
+            "Painting",
+            "Chillin"
+        ]
+    }
+]

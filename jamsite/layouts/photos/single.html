@@ -13,12 +13,37 @@
     <link rel="stylesheet" href='{{ $codeStyles.RelPermalink }}'>
 
 
-    <hr>
-    DATA Tests
-    
-    <hr>
+
 
 	<div class="post">
+
+        DATA Tests
+        <hr>
+            <!-- from data file -->
+            {{ range .Site.Data.users }}
+                <strong>{{ .surname }}, {{ .name }}</strong><br>
+                Skills: {{ range .skills }} {{.}} <br> {{ end }}<br>
+            {{ end }}
+    
+            <br>
+    
+            <!-- from URL -->
+            <div style="display: flex; flex-direction: row">
+                {{ range (getJSON "https://jsonplaceholder.typicode.com/photos?_limit=5") }}
+                    <img src="{{ .thumbnailUrl }}" alt="{{ .title }}">
+                {{ end }}
+            </div>
+            <br>
+
+            <div style="display: flex; flex-direction: column">
+                {{ range (getJSON "https://jsonplaceholder.typicode.com/posts?_limit=5") }}
+                    <h3>{{ .title | humanize }}</h3>
+                    <p>{{ .body }}</p>
+                    <br>
+                {{ end }}
+            </div>
+            <br>
+        <hr>
 
         <!-- TEST
         <hr>
