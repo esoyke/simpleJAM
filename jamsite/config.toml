@@ -4,3 +4,6 @@ title = "JAMSite"
 theme = "tale"
 copyright = "Copyright 2022 Soykeco Limited"
 disableKinds = ["section"]
+
+[outputs]
+    home = ["HTML", "JSON"]

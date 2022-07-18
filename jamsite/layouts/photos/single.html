@@ -17,9 +17,9 @@
 
 	<div class="post">
 
-        DATA Tests
+        <!-- DATA Tests
         <hr>
-            <!-- from data file -->
+            <h3>From data file</h3>
             {{ range .Site.Data.users }}
                 <strong>{{ .surname }}, {{ .name }}</strong><br>
                 Skills: {{ range .skills }} {{.}} <br> {{ end }}<br>
@@ -27,7 +27,7 @@
     
             <br>
     
-            <!-- from URL -->
+            <h3>From URL</h3>
             <div style="display: flex; flex-direction: row">
                 {{ range (getJSON "https://jsonplaceholder.typicode.com/photos?_limit=5") }}
                     <img src="{{ .thumbnailUrl }}" alt="{{ .title }}">
@@ -43,7 +43,7 @@
                 {{ end }}
             </div>
             <br>
-        <hr>
+        <hr> -->
 
         <!-- TEST
         <hr>
@@ -55,10 +55,12 @@
             {{ .Title }}: {{ .URL }}<br>
         {{- end }}
         <hr> -->
-        Function Tests:
+
+
+        <!-- Function Tests:
         <hr>
         Is 22 more than 8? <strong>{{ if gt 22 8 }} YES {{ else }} NO {{ end }}</strong>
-        <!-- same as: -->
+        (same as)
         Is 22 more than 8? <strong>{{ cond (gt 22 8) "YES"  "NO" }}</strong>
         <hr>
         {{ range (split "apple,orange,grape" ",") }}
@@ -72,7 +74,7 @@
         {{ $myvariable := "A variable value" }}
         <h3>{{ $myvariable}}</h3>
         {{ $myvariable = "A NEW variable value" }}
-        <h3>{{ $myvariable}}</h3>
+        <h3>{{ $myvariable}}</h3> -->
 
 		{{ partial "single/post-info.html" . }}
 		{{ partial "single/title.html" . }}
@@ -82,6 +84,8 @@
 		{{ partial "single/header.html" . }}
 
 		<div style="padding: 1rem; background: powderblue">{{ .Content }}</div>
+
+        {{ partial "contact.html" }}
 
         {{ partial "comments.html" . }}
 		{{ partial "single/footer.html" . }}

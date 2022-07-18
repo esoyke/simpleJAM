@@ -7,10 +7,10 @@ photoauthor: "Eric"
 tags: ['photo', 'dog', 'cute']
 ---
 
-{{< highlight html >}}
+<!-- {{< highlight html >}}
     <h1 class="post-title" style="color:{{ $titleColor }};">{{ .Title }}</h1>
     <div class="post-line"></div>
-{{< /highlight >}}
+{{< /highlight >}} -->
 
 ## Hugo the dog
 
