@@ -1,7 +1,7 @@
 # Basic JAMstack demo
 
 ## HUGO static content tool
-    gohugo.io
+    gohugo.io (written in Go)
 
 ## Creating a new site (how we got this site)
     hugo new site jamsite
