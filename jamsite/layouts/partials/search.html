@@ -94,7 +94,8 @@
         })
     })
 
-    fetch ( '/index.json' ).then(res => {
+    fetch ( {{ .Site.BaseURL }} + '/index.json' ).then(res => {
+    // fetch ( '/index.json' ).then(res => {
         res.json().then( searchIndex => {
             console.log(searchIndex);
             // build search index
