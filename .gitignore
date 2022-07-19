@@ -1,3 +1,5 @@
 # ignore compiled content
 /jamsite/public
 /jamsite/resources/_gen
+/public
+/resources/_gen
