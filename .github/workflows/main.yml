@@ -48,7 +48,7 @@ jobs:
       
       # Build site (had to add -D to include the drafts, this is why the site wasn't being built 'correctly')
       - name: Build HUGO site
-        run: hugo -D
+        run: hugo -Dv
         
       # Commit site to new branch  
       - name: Deploy to GH Pages
