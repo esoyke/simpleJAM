@@ -46,9 +46,9 @@ jobs:
           # Download (if necessary) and use Hugo extended version. Example: true
           extended: true
       
-      # Build site
+      # Build site (had to add -D to include the drafts, this is why the site wasn't being built 'correctly')
       - name: Build HUGO site
-        run: hugo
+        run: hugo -D
         
       # Commit site to new branch  
       - name: Deploy to GH Pages
