@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://esoyke.github.io/simpleJAM"
 languageCode = "en-us"
 title = "JAMSite"
 theme = "tale"
