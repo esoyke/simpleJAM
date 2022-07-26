@@ -1,0 +1,38 @@
+[
+    {
+        "meta": "Article One||https://esoyke.github.io/simpleJAM/premium/article-one/",
+        "title":"Article One",
+        "content":"[Article One]"
+    }
+,
+    {
+        "meta": "About||https://esoyke.github.io/simpleJAM/about/",
+        "title":"About",
+        "content":"[About JAMSite &lt;h1 class=&#34;post-title&#34; style=&#34;color:{{ $titleColor }};&#34;&gt;{{ .Title }}&lt;/h1&gt; &lt;div class=&#34;post-line&#34;&gt;&lt;/div&gt; function() { return &#34;Hello World&#34;; } FOOBAR]"
+    }
+,
+    {
+        "meta": "Photo One||https://esoyke.github.io/simpleJAM/photos/photo-one/",
+        "title":"Photo One",
+        "content":"[Photo Heading Photo excerpt Photo content]"
+    }
+,
+    {
+        "meta": "Second Page||https://esoyke.github.io/simpleJAM/second-page/",
+        "title":"Second Page",
+        "content":"[Post excerpt Main Heading Post Content.]"
+    }
+,
+    {
+        "meta": "Hugo Dog||https://esoyke.github.io/simpleJAM/photos/hugo-dog/",
+        "title":"Hugo Dog",
+        "content":"[Hugo the dog Here is a picture of a dog]"
+    }
+,
+    {
+        "meta": "First Page||https://esoyke.github.io/simpleJAM/first-page/",
+        "title":"First Page",
+        "content":"[First JAMSite page Blah blah blah, here is some content&hellip;&hellip;]"
+    }
+
+]

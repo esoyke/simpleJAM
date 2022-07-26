@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dog on JAMSite</title>
+    <link>https://esoyke.github.io/simpleJAM/tags/dog/</link>
+    <description>Recent content in dog on JAMSite</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright 2022 Soykeco Limited</copyright>
+    <lastBuildDate>Mon, 11 Apr 2022 15:10:08 -0400</lastBuildDate><atom:link href="https://esoyke.github.io/simpleJAM/tags/dog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Dog</title>
+      <link>https://esoyke.github.io/simpleJAM/photos/hugo-dog/</link>
+      <pubDate>Mon, 11 Apr 2022 15:10:08 -0400</pubDate>
+      
+      <guid>https://esoyke.github.io/simpleJAM/photos/hugo-dog/</guid>
+      <description>Hugo the dog Here is a picture of a dog</description>
+    </item>
+    
+  </channel>
+</rss>
